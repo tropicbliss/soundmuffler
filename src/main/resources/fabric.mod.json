@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "soundmuffler",
   "version": "${version}",
-
   "name": "SoundMuffler",
   "description": "This mod adds a Sound Muffler to Minecraft",
   "authors": [
@@ -12,10 +11,8 @@
     "homepage": "https://github.com/tropicbliss/soundmuffler",
     "sources": "https://github.com/tropicbliss/soundmuffler"
   },
-
   "license": "LGPL-3.0",
   "icon": "assets/soundmuffler/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -25,7 +22,6 @@
   "mixins": [
     "soundmuffler.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
