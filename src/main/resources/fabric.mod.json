@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "com.tropicbliss.soundmuffler.SoundMufflerMod"
+    ],
+    "client": [
+      "com.tropicbliss.soundmuffler.SoundMufflerClientMod"
     ]
   },
   "mixins": [

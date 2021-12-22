@@ -14,7 +14,6 @@ public class SoundMufflerMod implements ModInitializer {
   @Override
   public void onInitialize() {
     ModBlocks.registerBlocks();
-    SoundEventHandler.init();
     LOGGER.info("Hello Fabric world!");
   }
 }

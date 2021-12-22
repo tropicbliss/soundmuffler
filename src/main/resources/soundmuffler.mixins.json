@@ -4,9 +4,9 @@
   "package": "com.tropicbliss.soundmuffler.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "SoundSystemMixin"
   ],
   "client": [
+    "SoundSystemMixin"
   ],
   "injectors": {
     "defaultRequire": 1
