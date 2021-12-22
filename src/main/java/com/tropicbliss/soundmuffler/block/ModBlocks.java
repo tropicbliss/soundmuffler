@@ -7,13 +7,15 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
   public static final Block SOUND_MUFFLER = new Block(
-      FabricBlockSettings.of(Material.WOOL).strength(0.8f));
+      FabricBlockSettings.of(Material.WOOL).sounds(BlockSoundGroup.WOOL).strength(0.8F, 0.8F)
+          .requiresTool());
 
   public static void registerBlocks() {
     Registry.register(Registry.BLOCK, new Identifier(SoundMufflerMod.MOD_ID, "sound_muffler"),
