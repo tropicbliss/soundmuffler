@@ -1,5 +1,3 @@
-// Some code from this mod is taken and adapted from the project: https://github.com/MorningSage/ExtremeSoundMuffler-Fabric
-
 package com.tropicbliss.soundmuffler;
 
 import com.tropicbliss.soundmuffler.block.ModBlocks;

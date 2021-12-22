@@ -8,9 +8,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-// Code taken and adapted from https://github.com/MorningSage/ExtremeSoundMuffler-Fabric under the LGPL-3.0 from:
-// src/main/java/morningsage/extremesoundmuffler/mixin/SoundSystemMixin.java
-
 @Mixin(SoundSystem.class)
 public abstract class SoundSystemMixin {
 
@@ -22,7 +19,8 @@ public abstract class SoundSystemMixin {
       method = "getAdjustedVolume"
   )
   private float getVolume(SoundInstance soundInstance) {
-    SoundPlayingEvents.SoundInfo soundInfo = new SoundInfo(soundInstance.getVolume(), soundInstance.getX(), soundInstance.getY(), soundInstance.getZ());
+    SoundPlayingEvents.SoundInfo soundInfo = new SoundInfo(soundInstance.getVolume(),
+        soundInstance.getX(), soundInstance.getY(), soundInstance.getZ());
     SoundPlayingEvents.SOUND_VOLUME_EVENT.invoker().onSoundVolume(soundInfo);
     return soundInfo.getVolume();
   }
