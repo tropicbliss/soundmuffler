@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "soundmuffler",
+  "version": "${version}",
+
+  "name": "SoundMuffler",
+  "description": "This mod adds a Sound Muffler to Minecraft",
+  "authors": [
+    "tropicbliss"
+  ],
+  "contact": {
+    "homepage": "https://github.com/tropicbliss/soundmuffler",
+    "sources": "https://github.com/tropicbliss/soundmuffler"
+  },
+
+  "license": "MIT",
+  "icon": "assets/soundmuffler/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.tropicbliss.soundmuffler.SoundMufflerMod"
+    ]
+  },
+  "mixins": [
+    "soundmuffler.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:white_wool"
+    },
+    {
+      "item": "minecraft:note_block"
+    }
+  ],
+  "result": {
+    "item": "soundmuffler:sound_muffler"
+  }
+}
