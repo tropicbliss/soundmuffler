@@ -1,3 +1,3 @@
 # SoundMuffler
 
-idk, play around with it
+This is a port of Extra Utilities 2's Sound Muffler to Fabric.
