@@ -1,3 +1,5 @@
+// Adapted from https://github.com/MorningSage/ExtremeSoundMuffler-Fabric/blob/master/src/main/java/morningsage/extremesoundmuffler/events/handlers/SoundEventHandler.java by tropicbliss on 22/12/2021
+
 package com.tropicbliss.soundmuffler.events.handler;
 
 import com.tropicbliss.soundmuffler.block.ModBlocks;

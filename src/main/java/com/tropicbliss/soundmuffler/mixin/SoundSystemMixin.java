@@ -1,3 +1,5 @@
+// Adapted from https://github.com/MorningSage/ExtremeSoundMuffler-Fabric/blob/master/src/main/java/morningsage/extremesoundmuffler/mixin/SoundSystemMixin.java by tropicbliss on 22/12/2021
+
 package com.tropicbliss.soundmuffler.mixin;
 
 import com.tropicbliss.soundmuffler.events.SoundPlayingEvents;
