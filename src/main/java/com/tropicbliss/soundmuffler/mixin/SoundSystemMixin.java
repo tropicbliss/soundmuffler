@@ -16,13 +16,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Environment(EnvType.CLIENT)
 public abstract class SoundSystemMixin {
 
-  @Redirect(
-      at = @At(
-          value = "INVOKE",
-          target = "Lnet/minecraft/client/sound/SoundInstance;getVolume()F"
-      ),
-      method = "getAdjustedVolume"
-  )
+  @Redirect(at = @At(value = "INVOKE", target = "Lnet/minecraft/client/sound/SoundInstance;getVolume()F"), method = "getAdjustedVolume")
   private float getVolume(SoundInstance soundInstance) {
     SoundPlayingEvents.SoundInfo soundInfo = new SoundInfo(soundInstance.getVolume(),
         soundInstance.getX(), soundInstance.getY(), soundInstance.getZ());
